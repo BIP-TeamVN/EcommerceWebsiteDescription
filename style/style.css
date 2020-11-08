@@ -1,0 +1,46 @@
+/*Begin Reset CSS*/
+*::before,
+*,
+* ::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+img {
+  display: inline-block;
+  max-width: 100%;
+}
+a {
+  cursor: pointer;
+}
+ul {
+}
+
+html {
+  font-size: 1rem;
+}
+/*End Reset CSS*/
+
+#project-plan {
+  margin-top: 200px;
+}
+
+@include media-breakpoint-up(sm) {
+  html {
+    font-size: 1.2rem;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  html {
+    font-size: 1.4rem;
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  html {
+    font-size: 1.6rem;
+  }
+}
