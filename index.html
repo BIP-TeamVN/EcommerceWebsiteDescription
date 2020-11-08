@@ -14,44 +14,298 @@
 
 <body>
     <header class="container">
-        <h1 class="display-3 text-center">Mô tả đề tài môn lập trình Web</h1>
+        <h1 class="display-4 text-center">Mô tả đề tài môn lập trình Web</h1>
     </header>
 
     <div class="container">
         <h2 class="display-5 lead text-center">Đề tài: Website Thương mại điện tử</h2>
 
-        <table class="table table-striped">
+        <table class="table table-striped table-bordered" id="member-info">
             <thead>
-              <tr>
-                <th scope="col" colspan="2" class="text-center">Nhóm 2</th>
-              </tr>
-              <tr>
-                <th scope="col">Họ tên</th>
-                <th scope="col">MSSV</th>
-              </tr>
+                <tr>
+                    <th scope="col" colspan="2" class="text-center">Nhóm 2</th>
+                </tr>
+                <tr>
+                    <th scope="col" class="text-center">Họ tên</th>
+                    <th scope="col" class="text-center">MSSV</th>
+                </tr>
             </thead>
             <tbody>
-              <tr>
-                <th scope="row">Hồ Huy Hoàng</th>
-                <td>18110284</td>
-              </tr>
-              <tr>
-                <th scope="row">Lâm Quốc Khánh</th>
-                <td>18110304</td>
-              </tr>
-              <tr>
-                <th scope="row">Trần Quốc Nam</th>
-                <td>18110323</td>
-              </tr>
-              <tr>
-                <th scope="row">Nguyễn Trần Phúc</th>
-                <td>18110339</td>
-              </tr>
+                <tr>
+                    <th scope="row">Hồ Huy Hoàng</th>
+                    <td>18110284</td>
+                </tr>
+                <tr>
+                    <th scope="row">Lâm Quốc Khánh</th>
+                    <td>18110304</td>
+                </tr>
+                <tr>
+                    <th scope="row">Trần Quốc Nam</th>
+                    <td>18110323</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nguyễn Trần Phúc</th>
+                    <td>18110339</td>
+                </tr>
             </tbody>
-          </table>
+        </table>
+
+        <div id="role">
+            <h4>Phân quyền</h4>
+            <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action">Customer: Người mua hàng từ web</a>
+                <a href="#" class="list-group-item list-group-item-action">Admin: Chủ trang web</a>
+                <a href="#" class="list-group-item list-group-item-action">Seller: Các nhà cung cấp liên kết với web</a>
+                <a href="#" class="list-group-item list-group-item-action">Shipper: Người vận chuyển đơn hàng</a>
+            </div>
+        </div>
+
+        <div id="feature">
+            <h4>Tính năng</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Người dùng</th>
+                            <th scope="col">Chức năng</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="4">Customer</td>
+                            <td>Tìm kiếm mặt hàng</td>
+                        </tr>
+                        <tr>
+                            <td>Mua hàng</td>
+                        </tr>
+                        <tr>
+                            <td>Thanh toán</td>
+                        </tr>
+                        <tr>
+                            <td>Kiểm tra trạng thái đơn hàng</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="3">Admin</td>
+                            <td>Thêm seller, shipper</td>
+                        </tr>
+                        <tr>
+                            <td>Public sản phẩm</td>
+                        </tr>
+                        <tr>
+                            <td>Xem báo cáo</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="3">Seller</td>
+                            <td>Thêm, sửa, xóa sản phẩm</td>
+                        </tr>
+                        <tr>
+                            <td>Tư vấn khách hàng</td>
+                        </tr>
+                        <tr>
+                            <td>Xem báo cáo</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="1">Shipper</td>
+                            <td>Xem đơn hàng cần giao</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="container" id="project-plan">
+            <h4>Phân công nhiệm vụ</h4>
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th scope="col">Tên người thực hiện</th>
+                            <th scope="col">User</th>
+                            <th scope="col">Nhiệm vụ</th>
+                            <th scope="col">Thời gian</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-primary">
+                            <td colspan="4" class="text-center">Front-end</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9">Trần Quốc Nam</td>
+                            <td rowspan="4">Khách hàng</td>
+                            <td>Đăng ký, đăng nhập</td>
+                            <td>2/11 - 6/11</td>
+                        </tr>
+                        <tr>
+                            <td>Trang chủ</td>
+                            <td>7/11 - 12/11</td>
+                        </tr>
+                        <tr>
+                            <td>Giỏ hàng</td>
+                            <td>13/11 - 17/11</td>
+                        </tr>
+                        <tr>
+                            <td>Tìm kiếm</td>
+                            <td>18/11 - 22/11</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Quản lý</td>
+                            <td>Đăng nhập</td>
+                            <td>23/11 - 27/11</td>
+                        </tr>
+                        <tr>
+                            <td>Ngành hàng</td>
+                            <td>28/11 - 2/12</td>
+                        </tr>
+                        <tr>
+                            <td>Nhà cung cấp</td>
+                            <td>7/12 - 7/12</td>
+                        </tr>
+                        <tr>
+                            <td>Duyệt sản phẩm(public sp)</td>
+                            <td>8/12 - 11/12</td>
+                        </tr>
+                        <tr>
+                            <td>Vận chuyển</td>
+                            <td>12/12 - 14/12</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9">Nguyễn Trần Phúc</td>
+                            <td>Xem báo cáo</td>
+                            <td>2/11 - 6/11</td>
+                        </tr>
+                        <tr>
+                            <td>Mã giảm giá</td>
+                            <td>7/11 - 12/11</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5">Nhà cung cấp</td>
+                            <td>Đăng ký, đăng nhập</td>
+                            <td>13/11 - 17/11</td>
+                        </tr>
+                        <tr>
+                            <td>Sản phẩm</td>
+                            <td>18/11 - 22/11</td>
+                        </tr>
+                        <tr>
+                            <td>Đơn hàng</td>
+                            <td>23/11 - 27/11</td>
+                        </tr>
+                        <tr>
+                            <td>Hỗ trợ khách hàng</td>
+                            <td>28/11 - 2/12</td>
+                        </tr>
+                        <tr>
+                            <td>Xem báo cáo</td>
+                            <td>3/12 - 7/12</td>
+                        </tr>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Giao hàng</td>
+                            <td>Đăng nhập, đăng ký</td>
+                            <td>8/12 - 11/12</td>
+                        </tr>
+                        <tr>
+                            <td>Đơn hàng</td>
+                            <td>12/12 - 14/12</td>
+                        </tr>
+                        <tr class="table-primary">
+                            <td colspan="4" class="text-center">Back-end</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="9">Hồ Huy Hoàng</td>
+                            <td rowspan="4">Khách hàng</td>
+                            <td>Xử lý đăng ký, đăng nhập</td>
+                            <td>2/11 - 6/11</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, sửa, xóa giỏ hàng</td>
+                            <td>7/11 - 12/11</td>
+                        </tr>
+                        <tr>
+                            <td>Xử lý tìm kiếm khách hàng</td>
+                            <td>13/11 - 17/11</td>
+                        </tr>
+                        <tr>
+                            <td>Đưa sản phẩm lên trang chủ</td>
+                            <td>18/11 - 22/11</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="7">Quản lý</td>
+                            <td>Xử lý đăng nhập</td>
+                            <td>23/11 - 27/11</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, xóa, sửa ngành hàng</td>
+                            <td>28/11 - 2/12</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, xóa, sửa nhà cung cấp</td>
+                            <td>7/12 - 7/12</td>
+                        </tr>
+                        <tr>
+                            <td>Sửa trạng thái sản phẩm (public sp)</td>
+                            <td>8/12 - 11/12</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, xóa, sửa đơn vị vân chuyển</td>
+                            <td>12/12 - 14/12</td>
+                        </tr>
 
 
-        <h2>Mô tả: Xây dựng trang web thương mại điện tử</h2>
+                        <tr>
+                            <td rowspan="9">Lâm Quốc Khánh</td>
+                            <td>Truy xuất các thông tin về ngành hàng, sản phẩm, nhà cung cấp</td>
+                            <td>2/11 - 6/11</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, xóa, sửa mã giảm giá</td>
+                            <td>7/11 - 12/11</td>
+                        </tr>
+
+                        <tr>
+                            <td rowspan="5">Nhà cung cấp</td>
+                            <td>Xử lý đăng nhập, đăng ký</td>
+                            <td>13/11 - 17/11</td>
+                        </tr>
+                        <tr>
+                            <td>Thêm, xóa, sửa sản phẩm</td>
+                            <td>18/11 - 22/11</td>
+                        </tr>
+                        <tr>
+                            <td>Cập nhập trạng thái đơn hàng (Xác nhận)</td>
+                            <td>23/11 - 27/11</td>
+                        </tr>
+                        <tr>
+                            <td>Truy xuất kiểm tra thông tin để hỗ trợ khách hàng</td>
+                            <td>28/11 - 2/12</td>
+                        </tr>
+                        <tr>
+                            <td>Truy xuất thông tin thông tin thống kê sản phẩm bán được</td>
+                            <td>3/12 - 7/12</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="2">Giỏ hàng</td>
+                            <td>Xử lý đăng nhập, đăng ký</td>
+                            <td>8/12 - 11/12</td>
+                        </tr>
+                        <tr>
+                            <td>Truy vẫn thông tin đơn hàng cần giao, cập nhập trạng thái đơn hàng</td>
+                            <td>12/12 - 14/12</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+</body>
+
+</html>
+
+<!-- <body>
+
+    
         <ul class="list-unstyled">
             <li>Gồm có các người dùng:
                 <ul>
@@ -93,193 +347,7 @@
                 </ul>
             </li>
         </ul>
-        <h2>Phân công nhiệm vụ</h2>
 
-    <div class="container" id="project-plan">
-        <div class="table-responsive">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th scope="col">Tên người thực hiện</th>
-                        <th scope="col">User</th>
-                        <th scope="col">Nhiệm vụ</th>
-                        <th scope="col">Thời gian</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr class="table-primary">
-                        <td colspan="4" class="text-center">Front-end</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="9">Trần Quốc Nam</td>
-                        <td rowspan="4">Khách hàng</td>
-                        <td>Đăng ký, đăng nhập</td>
-                        <td>2/11 - 6/11</td>
-                    </tr>
-                    <tr>
-                        <td>Trang chủ</td>
-                        <td>7/11 - 12/11</td>
-                    </tr>
-                    <tr>
-                        <td>Giỏ hàng</td>
-                        <td>13/11 - 17/11</td>
-                    </tr>
-                    <tr>
-                        <td>Tìm kiếm</td>
-                        <td>18/11 - 22/11</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td rowspan="7">Quản lý</td>
-                        <td>Đăng nhập</td>
-                        <td>23/11 - 27/11</td>
-                    </tr>
-                    <tr>
-                        <td>Ngành hàng</td>
-                        <td>28/11 - 2/12</td>
-                    </tr>
-                    <tr>
-                        <td>Nhà cung cấp</td>
-                        <td>7/12 - 7/12</td>
-                    </tr>
-                    <tr>
-                        <td>Duyệt sản phẩm(public sp)</td>
-                        <td>8/12 - 11/12</td>
-                    </tr>
-                    <tr>
-                        <td>Vận chuyển</td>
-                        <td>12/12 - 14/12</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="9">Nguyễn Trần Phúc</td>
-                        <td>Xem báo cáo</td>
-                        <td>2/11 - 6/11</td>
-                    </tr>
-                    <tr>
-                        <td>Mã giảm giá</td>
-                        <td>7/11 - 12/11</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="5">Nhà cung cấp</td>
-                        <td>Đăng ký, đăng nhập</td>
-                        <td>13/11 - 17/11</td>
-                    </tr>
-                    <tr>
-                        <td>Sản phẩm</td>
-                        <td>18/11 - 22/11</td>
-                    </tr>
-                    <tr>
-                        <td>Đơn hàng</td>
-                        <td>23/11 - 27/11</td>
-                    </tr>
-                    <tr>
-                        <td>Hỗ trợ khách hàng</td>
-                        <td>28/11 - 2/12</td>
-                    </tr>
-                    <tr>
-                        <td>Xem báo cáo</td>
-                        <td>3/12 - 7/12</td>
-                    </tr>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Giao hàng</td>
-                        <td>Đăng nhập, đăng ký</td>
-                        <td>8/12 - 11/12</td>
-                    </tr>
-                    <tr>
-                        <td>Đơn hàng</td>
-                        <td>12/12 - 14/12</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="9">Hồ Huy Hoàng</td>
-                        <td rowspan="4">Khách hàng</td>
-                        <td>Xử lý đăng ký, đăng nhập</td>
-                        <td>2/11 - 6/11</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, sửa, xóa giỏ hàng</td>
-                        <td>7/11 - 12/11</td>
-                    </tr>
-                    <tr>
-                        <td>Xử lý tìm kiếm khách hàng</td>
-                        <td>13/11 - 17/11</td>
-                    </tr>
-                    <tr>
-                        <td>Đưa sản phẩm lên trang chủ</td>
-                        <td>18/11 - 22/11</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="7">Quản lý</td>
-                        <td>Xử lý đăng nhập</td>
-                        <td>23/11 - 27/11</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, xóa, sửa ngành hàng</td>
-                        <td>28/11 - 2/12</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, xóa, sửa nhà cung cấp</td>
-                        <td>7/12 - 7/12</td>
-                    </tr>
-                    <tr>
-                        <td>Sửa trạng thái sản phẩm (public sp)</td>
-                        <td>8/12 - 11/12</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, xóa, sửa đơn vị vân chuyển</td>
-                        <td>12/12 - 14/12</td>
-                    </tr>
-
-
-                    <tr>
-                        <td rowspan="9">Lâm Quốc Khánh</td>
-                        <td>Truy xuất các thông tin về ngành hàng, sản phẩm, nhà cung cấp</td>
-                        <td>2/11 - 6/11</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, xóa, sửa mã giảm giá</td>
-                        <td>7/11 - 12/11</td>
-                    </tr>
-
-                    <tr>
-                        <td rowspan="5">Nhà cung cấp</td>
-                        <td>Xử lý đăng nhập, đăng ký</td>
-                        <td>13/11 - 17/11</td>
-                    </tr>
-                    <tr>
-                        <td>Thêm, xóa, sửa sản phẩm</td>
-                        <td>18/11 - 22/11</td>
-                    </tr>
-                    <tr>
-                        <td>Cập nhập trạng thái đơn hàng (Xác nhận)</td>
-                        <td>23/11 - 27/11</td>
-                    </tr>
-                    <tr>
-                        <td>Truy xuất kiểm tra thông tin để hỗ trợ khách hàng</td>
-                        <td>28/11 - 2/12</td>
-                    </tr>
-                    <tr>
-                        <td>Truy xuất thông tin thông tin thống kê sản phẩm bán được</td>
-                        <td>3/12 - 7/12</td>
-                    </tr>
-                    <tr>
-                        <td rowspan="2">Giỏ hàng</td>
-                        <td>Xử lý đăng nhập, đăng ký</td>
-                        <td>8/12 - 11/12</td>
-                    </tr>
-                    <tr>
-                        <td>Truy vẫn thông tin đơn hàng cần giao, cập nhập trạng thái đơn hàng</td>
-                        <td>12/12 - 14/12</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-
-</body>
-
-
-<!-- <body>
     <div class="Header">
         <h1>Mô tả đề tài môn lập trình Web</h1>
     </div>
@@ -518,5 +586,3 @@
         <span>Design by group 2</span>
     </div>
 </body> -->
-
-</html>
